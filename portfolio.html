@@ -5,6 +5,10 @@
     <title>grinek – Portfolio video & foto & edit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio grinek – teledyski, montaż wideo i fotografia.">
+
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+
     <link rel="stylesheet" href="assets/portfolio.css">
 </head>
 <body>
@@ -20,7 +24,6 @@
 </header>
 
 <main>
-    <!-- INTRO -->
     <section class="intro">
         <h2>Portfolio – teledyski & fotografia & montaż</h2>
         <p>
@@ -30,17 +33,13 @@
         </p>
     </section>
 
-    <!-- PORTFOLIO -->
     <section id="portfolio">
-        <!-- TELEDYSKI -->
         <h2>Teledyski & Montaż</h2>
 
         <div class="portfolio-grid video-grid">
-            <!-- TELEDYSK 1 -->
             <article class="portfolio-item">
                 <div class="portfolio-thumb">
-                    <!-- PODMIEŃ NA SWÓJ KADR Z TELEDYSKU -->
-                    <img src="assets/img/1101.png" alt="Kadr z teledysku Nocne światła">
+                    <img src="assets/img/1101.png" alt="Kadr z teledysku K0NE – NA BLOKU">
                     <div class="play-badge">
                         <div class="play-icon"></div>
                     </div>
@@ -52,27 +51,25 @@
                         Teledysk nagrany nocą w mieście – nagrania na gimbalu DJI Ronin‑SC, ujęcia z drona DJI Mini 3 Pro
                         i dynamiczny montaż pod beat. Całość kolorowana w ciemnym, nasyconym klimacie.
                     </p>
-                    <!-- PODMIEŃ NA LINK DO SWOJEGO TELEDYSKU -->
                     <a class="portfolio-link" href="https://www.youtube.com/watch?v=bPh_ERapkJA" target="_blank" rel="noopener">
                         Obejrzyj teledysk na YouTube
                     </a>
                 </div>
             </article>
 
-            <!-- TELEDYSK 2 -->
             <article class="portfolio-item">
                 <div class="portfolio-thumb">
-                    <img src="assets/img/miniaturka.webp" alt="Kadr z teledysku Bez snu">
+                    <img src="assets/img/miniaturka.webp" alt="Miniaturka Bling-Bang-Bang-Born Valorant Montage">
                     <div class="play-badge">
                         <div class="play-icon"></div>
                     </div>
                 </div>
                 <div class="portfolio-body">
-                    <div class="portfolio-meta">montaż filmu z gry</div>
+                    <div class="portfolio-meta">Montaż filmu z gry</div>
                     <h3>Bling-Bang-Bang-Born | Valorant Montage</h3>
                     <p class="portfolio-desc">
                         Montaż dynamicznego filmu z gry Valorant – szybkie cięcia, synchronizacja z muzyką
-                        i efekty podkreślające akcję. Film stworzony na potrzebę filmu na YouTube
+                        i efekty podkreślające akcję. Film stworzony na potrzeby YouTube.
                     </p>
                     <a class="portfolio-link" href="https://www.youtube.com/watch?v=hrODO1vD7w4" target="_blank" rel="noopener">
                         Zobacz projekt na YouTube
@@ -81,14 +78,12 @@
             </article>
         </div>
 
-        <!-- FOTOGRAFIA -->
         <h2>Fotografia</h2>
 
         <div class="portfolio-grid photo-grid">
-            <!-- FOTO 1 -->
-            <article class="portfolio-item">
+            <article class="portfolio-item" data-gallery="kone">
                 <div class="portfolio-thumb">
-                    <img src="assets/img/1101(1).png" alt="Portret w plenerze o zachodzie słońca">
+                    <img src="assets/img/1101(1).png" alt="K0NE – NA BLOKU, kadr foto 1">
                 </div>
                 <div class="portfolio-body">
                     <div class="portfolio-meta">Sesja foto podczas teledysku</div>
@@ -103,14 +98,13 @@
                 </div>
             </article>
 
-            <!-- FOTO 2 -->
-            <article class="portfolio-item">
+            <article class="portfolio-item" data-gallery="backstage">
                 <div class="portfolio-thumb">
-                    <img src="assets/img/photo2.jpg" alt="Backstage z planu teledysku">
+                    <img src="assets/img/plan.png" alt="Backstage z planu teledysku">
                 </div>
                 <div class="portfolio-body">
                     <div class="portfolio-meta">Backstage · plan teledysku</div>
-                    <h3>Backstage z nagrań K0NE - NA BLOKU</h3>
+                    <h3>Backstage z nagrań K0NE – NA BLOKU</h3>
                     <p class="portfolio-desc">
                         Kulisy z planu – praca z artystą, światłem i ekipą.
                         Zdjęcia pokazujące klimat nagrań i to, czego nie widać w finalnym klipie.
@@ -121,27 +115,35 @@
                 </div>
             </article>
 
-            <!-- FOTO 3 -->
-            <article class="portfolio-item">
+            <article class="portfolio-item" data-gallery="moto">
                 <div class="portfolio-thumb">
-                    <img src="assets/img/photo3.jpg" alt="Okładka singla">
+                    <img src="assets/img/photo3.jpg" alt="Zdjęcie motoru">
                 </div>
                 <div class="portfolio-body">
                     <div class="portfolio-meta">Sesja zdjęciowa motoru</div>
                     <h3>Zdjęcia motoru</h3>
                     <p class="portfolio-desc">
-                        Sesja zdjęciowa motoru na potrzeby klienta
-                        Zdjęcia robione w plenerze z wykorzystaniem naturalnego światła.
+                        Sesja zdjęciowa motoru na potrzeby klienta – kadry w plenerze
+                        z wykorzystaniem naturalnego światła.
                     </p>
                     <a class="portfolio-link" href="#" target="_blank" rel="noopener">
-                        Zobacz zdjęcia okładkowe
+                        Zobacz zdjęcia motoru
                     </a>
                 </div>
             </article>
-
         </div>
     </section>
 </main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-inner">
+        <button class="lightbox-close" aria-label="Zamknij">&times;</button>
+        <button class="lightbox-prev" aria-label="Poprzednie zdjęcie">&#10094;</button>
+        <img src="" alt="" class="lightbox-image">
+        <button class="lightbox-next" aria-label="Następne zdjęcie">&#10095;</button>
+        <div class="lightbox-caption"></div>
+    </div>
+</div>
 
 <footer>
     © <span id="year"></span> grinek – Teledyski & Fotografia & Montaż
